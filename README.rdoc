@@ -15,5 +15,10 @@ app, it is also much more quickly loaded.
 
 You probably don't want to run it in production, though.
 
+== Use
+
+Just go to <your-url>/route66.  So in a brand new default project:
+
+  http://localhost:3000/route66
 
 This project rocks and uses MIT-LICENSE.
