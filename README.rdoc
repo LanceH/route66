@@ -1,3 +1,19 @@
 = Route66
 
+This project is meant to supply route and controller information
+in a rails project at <your-url>/route66.
+
+It should match the same information found in 'rake routes' in a more
+easily viewed form.  Since routes information is already loaded in an
+app, it is also much more quickly loaded.
+
+== Installation
+
+git 'git://github.com/LanceH/route66.git' do
+       gem 'route66'
+end
+
+You probably don't want to run it in production, though.
+
+
 This project rocks and uses MIT-LICENSE.
