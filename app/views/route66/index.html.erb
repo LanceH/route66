@@ -1,0 +1,26 @@
+Routes
+
+<table class="table table-striped">
+	<tr>
+		<th>precedence</th>
+		<th>verb</th>
+		<th>controller</th>
+		<th>action</th>
+		<th>path</th>
+	</tr>
+
+	<% @routes.each do |r| %>
+		<tr>
+			<td><%= r.precedence %></td>
+
+      <% verb = r.verb.to_s.scan( /\^(\w+)\$/).first %>
+      <td><%= verb ? verb.first : '' %></td>
+
+			<td><%= r.defaults[:controller] %></td>
+			<td><%= r.defaults[:action] %></td>
+
+			<td><%= r.path.spec %></td>
+		</tr>
+	<% end %>
+</ul>
+
