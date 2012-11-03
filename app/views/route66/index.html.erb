@@ -7,19 +7,20 @@ Routes
 		<th>controller</th>
 		<th>action</th>
 		<th>path</th>
+		<th>name</th>
 	</tr>
 
 	<% @routes.each do |r| %>
 		<tr>
-			<td><%= r.precedence %></td>
+			<td><%= r[:precedence] %></td>
 
-      <% verb = r.verb.to_s.scan( /\^(\w+)\$/).first %>
-      <td><%= verb ? verb.first : '' %></td>
+      <td><%= r[:verb] %></td>
 
-			<td><%= r.defaults[:controller] %></td>
-			<td><%= r.defaults[:action] %></td>
+			<td><%= r[:controller] %></td>
+			<td><%= r[:action] %></td>
 
-			<td><%= r.path.spec %></td>
+			<td><%= r[:path] %></td>
+			<td><%= r[:name] %></td>
 		</tr>
 	<% end %>
 </ul>
