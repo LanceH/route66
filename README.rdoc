@@ -9,9 +9,9 @@ app, it is also much more quickly loaded.
 
 == Installation
 
-git 'git://github.com/LanceH/route66.git' do
-       gem 'route66'
-end
+  git 'git://github.com/LanceH/route66.git' do
+    gem 'route66'
+  end
 
 You probably don't want to run it in production, though.
 
