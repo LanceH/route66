@@ -15,7 +15,7 @@
       <td><%= r[:verb] %></td>
 
 			<% unless r[:controller].nil? %>
-				<td><%= link_to r[:controller], route66_controller_path(r[:controller]) %></td>
+				<td><%= link_to r[:controller], route66_controller_path(u r[:controller]) %></td>
 			<% end %>
 			<td><%= r[:action] %></td>
 
