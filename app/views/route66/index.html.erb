@@ -14,12 +14,13 @@
 
       <td><%= r[:verb] %></td>
 
-			<td><%= r[:controller] %></td>
+			<% unless r[:controller].nil? %>
+				<td><%= link_to r[:controller], route66_controller_path(r[:controller]) %></td>
+			<% end %>
 			<td><%= r[:action] %></td>
 
 			<td><%= r[:path] %></td>
 			<td><%= r[:name] %></td>
 		</tr>
 	<% end %>
-</ul>
-
+</table>
