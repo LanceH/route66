@@ -9,11 +9,14 @@ app, it is also much more quickly loaded.
 
 == Installation
 
-  git 'git://github.com/LanceH/route66.git' do
+Route66 can be found at: https://rubygems.org/gems/route66
+Just add the following line to your Gemfile:
+
     gem 'route66'
-  end
 
 You probably don't want to run it in production, though.
+
+		gem 'route66', :group => :development
 
 == Use
 

@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Route66::VERSION
   s.authors     = ["Lance Hampton"]
   s.email       = ["lance.hampton@gmail.com"]
-  s.homepage    = "http://zengine.com"
+  s.homepage    = "https://github.com/LanceH/route66"
   s.summary     = "Displays routes information"
   s.description = "Displays routes information"
 
