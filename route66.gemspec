@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Lance Hampton"]
   s.email       = ["lance.hampton@gmail.com"]
   s.homepage    = "https://github.com/LanceH/route66"
-  s.summary     = "Displays routes information"
-  s.description = "Displays routes information"
+  s.summary     = "Displays routes at <your-app>/route66"
+  s.description = "Displays routes at <your-app>/route66"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]

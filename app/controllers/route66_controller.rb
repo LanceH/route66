@@ -19,16 +19,14 @@ class Route66Controller < ApplicationController
     Rails.application.routes.routes.routes.each do |r|
       verb = r.verb.to_s.scan( /\^(\w+)\$/).first
       verb = verb ? verb.first : ''
+			name = r.name ? r.name : ''
       new_route = {:precedence => r.precedence,
                    :verb       => verb,
                    :controller => r.defaults[:controller],
                    :action     => r.defaults[:action],
                    :path       => r.path.spec,
-                   :name       => '' }
+                   :name       => name }
       @routes[r.precedence] = new_route
-		end
-		Rails.application.routes.routes.named_routes.each do |name, route|
-			@routes[route.precedence][:name] = name
 		end
 	end
 
