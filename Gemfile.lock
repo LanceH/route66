@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    route66 (0.0.1)
+    route66 (0.0.2)
       rails (~> 3.2.8)
 
 GEM
