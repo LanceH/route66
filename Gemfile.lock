@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    route66 (0.0.2)
-      rails (~> 3.2.8)
+    route66 (0.0.3)
+      rails (>= 3.2.0)
 
 GEM
   remote: http://rubygems.org/
@@ -85,7 +85,7 @@ GEM
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
-    tzinfo (0.3.34)
+    tzinfo (0.3.35)
 
 PLATFORMS
   ruby
