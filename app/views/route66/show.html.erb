@@ -1,0 +1,30 @@
+<%= link_to "All", route66_path %>
+<h1>
+	<%= params[:id].camelize %>
+</h1>
+<table class="table table-striped">
+	<tr>
+		<th>precedence</th>
+		<th>verb</th>
+		<th>controller</th>
+		<th>action</th>
+		<th>path</th>
+		<th>name</th>
+	</tr>
+
+	<% @routes.each do |r| %>
+		<% next unless r[:controller] == @controller %>
+		<tr>
+			<td><%= r[:precedence] %></td>
+
+      <td><%= r[:verb] %></td>
+
+			<td><%= r[:controller].camelize %></td>
+			<td><%= r[:action] %></td>
+
+			<td><%= r[:path] %></td>
+			<td><%= r[:name] %></td>
+		</tr>
+	<% end %>
+
+</table>
