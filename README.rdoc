@@ -1,5 +1,7 @@
 = Route66
 
+For Rails 3.2 and above.
+
 This project is meant to supply route and controller information
 in a rails project at <your-url>/route66.
 
